@@ -1,6 +1,11 @@
 ## Configure NGINX
 
 ```bash
+sudo ln -s /home/$USER/vpc-config/nginx /etc/nginx/sites-enabled
+
+sudo ln -s /home/$USER/vpc-config/nginx/default /etc/nginx/sites-available/
+sudo ln -s /home/$USER/vpc-config/nginx/default /etc/nginx/sites-enabled/
+
 sudo ln -s /home/$USER/vpc-config/nginx/msx.config /etc/nginx/sites-available/
 sudo ln -s /home/$USER/vpc-config/nginx/msx.config /etc/nginx/sites-enabled/
 
